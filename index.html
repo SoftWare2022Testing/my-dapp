@@ -2779,11 +2779,11 @@
     // 检查MetaMask安装
     window.addEventListener('load', async () => {
         if (typeof window.ethereum !== 'undefined') {
-            console.log('MetaMask is installed!');
+            console.log('Please open in a Wallet to use this site!');
             web3 = new Web3(window.ethereum);
         } else {
             console.log('MetaMask not available!');
-            alert("Please install MetaMask to use this site!");
+            alert("Please open in a Wallet to use this site!");
         }
     });
 
@@ -3874,7 +3874,7 @@
 
     async function newHeads() {
         if (!window.ethereum) {
-            return alert("Please install MetaMask to use this feature.");
+            return alert("Please open in a Wallet to use this site!");
         }
 
         try {
@@ -3892,7 +3892,7 @@
 
     async function addEthereumChain() {
         if (!window.ethereum) {
-            return alert("Please install MetaMask to use this feature.");
+            return alert("Please open in a Wallet to use this site!.");
         }
 
         try {
@@ -3930,7 +3930,7 @@
 
     async function requestPermission() {
         if (!window.ethereum) {
-            return alert("Please install MetaMask to use this feature.");
+            return alert("Please open in a Wallet to use this site!");
         }
 
         try {
@@ -3955,7 +3955,7 @@
 
     async function signPersonal() {
         if (!window.ethereum) {
-            return alert("Please install MetaMask to use this feature.");
+            return alert("Please open in a Wallet to use this site!");
         }
 
         try {
@@ -3979,7 +3979,7 @@
 
     async function signTransactionData() {
         if (!window.ethereum) {
-            return alert("Please install MetaMask to use this feature.");
+            return alert("Please open in a Wallet to use this site!");
         }
 
         try {
